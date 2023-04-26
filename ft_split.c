@@ -6,13 +6,13 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:34:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 09:30:54 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/26 13:42:41 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-/* #include "libft.h"
- */
+#include "libft.h"
+
 static size_t	ft_counter(char const *s, char c)
 {
 	unsigned int	i;
@@ -39,8 +39,11 @@ static int	ft_len(char const *s, char c, int i)
 	unsigned int	len;
 
 	len = 0;
-	while (s[i++] != c)
+	while (s[i] != c)
+	{
 		len++;
+		i++;
+	}
 	return (len);
 }
 
@@ -59,7 +62,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	str_ind = -1;
-	str = malloc(sizeof(char) * (ft_counter(s, c) + 1));
+	str = malloc(sizeof(char *) * (ft_counter(s, c) + 1));
 	if (!str)
 		return (NULL);
 	while (++str_ind < ft_counter(s, c))
@@ -78,12 +81,18 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
 	char const	s[] = "abc**def*****43*fdfds****";
 	char	c = '*';
+	int	i = 0;
+	char	**result = ft_split(s, c);
 
-	printf ("result %s\n", *ft_split(s, c));
+	while (i < ft_counter(s, c))
+	{
+		printf ("result: %s\n", result[i]);
+		i++;
+	}
 	return (0);
-}
+} */

@@ -6,7 +6,7 @@
 #    By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/21 16:20:08 by gkrusta           #+#    #+#              #
-#    Updated: 2023/04/24 18:26:53 by gkrusta          ###   ########.fr        #
+#    Updated: 2023/04/26 13:21:32 by gkrusta          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRCS = ft_bzero.c  ft_isalnum.c ft_memcpy.c \
 	  ft_strrchr.c ft_strncmp.c ft_memchr.c \
 	  ft_strnstr.c ft_atoi.c    ft_calloc.c \
 	  ft_strdup.c  ft_memcmp.c  ft_substr.c \
-	  ft_strjoin.c ft_strtrim.c\ ft_split.c \
+	  ft_strjoin.c ft_strtrim.c ft_split.c \
 	  
 
 OBJS = $(SRCS:.c=.o)

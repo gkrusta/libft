@@ -1,45 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/24 18:42:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 11:51:04 by gkrusta          ###   ########.fr       */
+/*   Created: 2023/04/26 11:45:39 by gkrusta           #+#    #+#             */
+/*   Updated: 2023/04/26 16:56:42 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned char	*ptr1;
-	unsigned char	*ptr2;
-	size_t			i;
+	size_t	i;
+	size_t	j;
 
-	ptr1 = (unsigned char *)dst;
-	ptr2 = (unsigned char *)src;
 	i = 0;
-	while (i < n)
-	{
-		ptr1[i] = ptr2[i];
+	j = 0;
+	while (dst[i] && i < size)
 		i++;
+	while (src[j] && i + j + 1 < size)
+	{
+		dst[i + j] = src[j];
+		j++;
 	}
-	return (dst);
+	if (i < size)
+		dst[i + j] = '\0';
+	return (i + ft_strlen((char *)src));
 }
 
 /* #include <stdio.h>
 #include <string.h>
 int	main(void)
 {
-	char	src[] = "Comoestas";
-	char	dst[] = "fdfdfd";
-	size_t	len;
-
-	len = 4;
-	printf("result is %s\n\n", ft_memcpy(dst, src + 1, len));
-	printf("result is %s", memcpy(dst, src + 1, len));
+	char	dest[] = "12345";
+	char	src[] = "678";
+	printf("result: %zu\n\n", ft_strlcat(dest, src, 6));
+	printf("%s\n\n", dest);
+	printf("result: %zu\n\n", strlcat(dest, src, 6));
+	printf("%s\n\n", dest);
 	return (0);
 } */

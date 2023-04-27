@@ -1,45 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/24 18:41:18 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/27 17:17:35 by gkrusta          ###   ########.fr       */
+/*   Created: 2023/04/27 15:48:54 by gkrusta           #+#    #+#             */
+/*   Updated: 2023/04/27 17:35:14 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
+	int		i;
+	char	*result;
 
 	i = 0;
-	while (str[i])
+	result = (char *)s;
+	result = malloc(sizeof(char) * ft_strlen(result) + 1);
+	if (!result)
+		return (NULL);
+	while (i < ft_strlen((char *)(s)))
 	{
-		if ((unsigned char)str[i] == (unsigned char)c)
-			return (((char *)&str[i]));
+		result[i] = f(i, s[i]);
 		i++;
 	}
-	if (c == '\0')
-		return (((char *)&str[i]));
-	return (NULL);
+	result[i] = '\0';
+	return (result);
 }
 
 /* #include <stdio.h>
-#include <string.h>
 
 int	main(void)
 {
-	char	str[] = "12341";
-	unsigned char	c;
+	printf("result: %s", ft_strmapi("TESTstring", f));
+	return (0);
+}
 
-	c = '\0';
-	printf ("the first occurrence of %c is in '%s' is %s \n\n",
-	c, str, ft_strchr(str, c));
-	printf ("the first occurrence of %c is in '%s' is %s \n\n",
-	c, str, strchr(str, c));
+char	f(unsigned int i, char c)
+{
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 } */

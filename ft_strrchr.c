@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:03:33 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 07:25:15 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/27 15:28:11 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,14 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
-	int	exit_loop;
 
 	i = 0;
-	exit_loop = 0;
 	while (str[i])
 		i++;
-	while (str[i] > 0)
+	while (i >= 0)
 	{
-		if (str[i] == c && exit_loop == 0)
-		{
+		if ((unsigned char)str[i] == (unsigned char)c)
 			return (((char *)&str[i]));
-			exit_loop = 1;
-		}
 		i--;
 	}
 	if (c == '\0')

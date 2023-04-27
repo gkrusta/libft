@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:38:07 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 07:17:34 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/27 16:08:46 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	len = (ft_strlen((char *)s1) + ft_strlen((char *)s2));
-	str3 = (char *)malloc(sizeof(char) * (len + 1));
+	str3 = malloc(sizeof(char) * (len + 1));
 	if (!str3)
 		return (NULL);
 	while (s1[i])

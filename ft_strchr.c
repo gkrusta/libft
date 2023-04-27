@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:41:18 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/24 18:41:29 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/27 12:10:42 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strchr(const char *str, int c)
 
 int	main(void)
 {
-	char	str[] = "123456890";
+	char	str[] = "123456789087777";
 	unsigned char	c;
 
 	c = '7';

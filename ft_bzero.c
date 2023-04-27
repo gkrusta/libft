@@ -6,9 +6,11 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 19:01:10 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 16:56:49 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/27 12:03:50 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

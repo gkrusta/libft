@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:41:18 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 13:01:47 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 13:55:17 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strchr(const char *str, int c)
 			return (((char *)&str[i]));
 		i++;
 	}
-	if (c == '\0' || c == 1024)
+	if ((char)c == '\0')
 		return (((char *)&str[i]));
 	return (NULL);
 }

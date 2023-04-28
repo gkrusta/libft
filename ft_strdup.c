@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:38:59 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/24 18:39:03 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 16:24:58 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strdup(const char *str)
 	char	*s;
 
 	i = 0;
-	s = malloc(sizeof(char) * (ft_strlen((char *)(str) + 1)));
-	if (s == NULL)
+	s = malloc(sizeof(char) * (ft_strlen((char *)str) + 1));
+	if (!s)
 		return (0);
 	while (i <= (size_t)(ft_strlen((char *)str)))
 	{

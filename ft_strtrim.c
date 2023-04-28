@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:16:14 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/24 17:54:32 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 16:38:20 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	if (s1[end] != set[0])
 		end = ft_strlen((char *)s1);
-	result = (char *)malloc((sizeof(*s1)) * (end - start + 1));
+	result = malloc((sizeof(char)) * (end - start + 1));
 	if (!result)
 		return (NULL);
 	i = 0;

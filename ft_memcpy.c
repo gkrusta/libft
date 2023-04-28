@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:42:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 11:51:04 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 16:54:36 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	ptr1 = (unsigned char *)dst;
 	ptr2 = (unsigned char *)src;
 	i = 0;
+	if (!dst && !src)
+		return (0);
 	while (i < n)
 	{
 		ptr1[i] = ptr2[i];

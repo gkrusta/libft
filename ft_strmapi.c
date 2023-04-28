@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 15:48:54 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/27 17:35:14 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 11:46:43 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 /* #include <stdio.h>
-
 int	main(void)
 {
 	printf("result: %s", ft_strmapi("TESTstring", f));
 	return (0);
 }
-
 char	f(unsigned int i, char c)
 {
 	if (c >= 'A' && c <= 'Z')

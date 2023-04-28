@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:45:39 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 16:56:42 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 11:38:05 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int	main(void)
 {
 	char	dest[] = "12345";
 	char	src[] = "678";
-	printf("result: %zu\n\n", ft_strlcat(dest, src, 6));
+	printf("result: %zu\n\n", ft_strlcat(dest, src, 1));
 	printf("%s\n\n", dest);
-	printf("result: %zu\n\n", strlcat(dest, src, 6));
+	printf("result: %zu\n\n", strlcat(dest, src, 1));
 	printf("%s\n\n", dest);
 	return (0);
 } */

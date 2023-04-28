@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:34:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 13:42:41 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/28 19:04:51 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ static size_t	ft_counter(char const *s, char c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] != c)
 		{
 			count++;
-			while (s[i] == c)
+			while (s[i] && s[i] != c)
 				i++;
 		}
 		else
@@ -39,7 +39,7 @@ static int	ft_len(char const *s, char c, int i)
 	unsigned int	len;
 
 	len = 0;
-	while (s[i] != c)
+	while (s[i] && s[i] != c)
 	{
 		len++;
 		i++;
@@ -75,7 +75,7 @@ char	**ft_split(char const *s, char c)
 			ft_free(str, str_ind);
 			return (0);
 		}
-		i += ft_len(s, c, i);
+		i += ft_len(s, c, i) + 1;
 	}
 	str[str_ind] = 0;
 	return (str);

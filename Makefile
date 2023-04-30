@@ -6,7 +6,7 @@
 #    By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/21 16:20:08 by gkrusta           #+#    #+#              #
-#    Updated: 2023/04/28 18:05:12 by gkrusta          ###   ########.fr        #
+#    Updated: 2023/04/30 17:03:59 by gkrusta          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,12 +24,15 @@ SRCS = ft_bzero.c  ft_isalnum.c ft_memcpy.c \
 	  ft_strdup.c  ft_memcmp.c  ft_substr.c \
 	  ft_strjoin.c ft_strtrim.c ft_split.c \
 	  ft_itoa.c    ft_strmapi.c ft_striteri.c \
-	  ft_putchar_fd.c           ft_putstr_fd.c \
-	  ft_putendl_fd.c           ft_putnbr_fd.c
+	  ft_putchar_fd.c ft_putstr_fd.c \
+	  ft_putendl_fd.c ft_putnbr_fd.c
 
-	  
+SRCS_BONUS = ft_lstnew.c ft_lstadd_front.c \
+			ft_lstadd_front.c
 
 OBJS = $(SRCS:.c=.o)
+
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 CC = gcc
 
@@ -46,11 +49,14 @@ $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean:
 	$(RM) $(NAME)
 
 re: fclean all
+
+bonus: $(OBJS_BONUS) $(OBJS)
+	$(LIB) $(NAME) $(OBJS) $(OBJS_BONUS)
 
 .PHONY: all clean fclean re

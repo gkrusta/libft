@@ -6,22 +6,19 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:21:13 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 16:22:39 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/30 17:03:26 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-typedef struct	s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
 /* Libraries used */
+
 # include <stdlib.h>
 # include <string.h>
 # include <stdio.h>
+
 /* functions from <stdlib.h> */
 int		ft_atoi(const char	*str);
 void	*ft_calloc(size_t num, size_t size);
@@ -58,5 +55,16 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
 /* bonus functions */
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
 #endif

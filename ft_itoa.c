@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:58:11 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 19:32:40 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/04/29 18:43:00 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 
 static int	ft_numblen(long n)
 {
-	size_t	count;
+	int	count;
 
-	count = 0;
-	if (n <= 0)
-		count++;
-	while (n != 0)
+	count = 1;
+	while (n >= 10)
 	{
 		n /= 10;
 		count++;
@@ -31,27 +29,26 @@ static int	ft_numblen(long n)
 char	*ft_itoa(int n)
 {
 	char	*result;
-	size_t	len;
+	int		len;
 	long	nr;
 
-	len = ft_numblen((long)(n));
-	nr = (long)n;
+	nr = n;
+	if (nr < 0)
+		nr *= (-1);
+	len = ft_numblen(nr);
+	if (n < 0)
+		len++;
 	result = malloc(sizeof(char) * (len + 1));
 	if (!result)
 		return (NULL);
 	result[len--] = '\0';
-	if (nr < 0)
-	{
-		result[0] = '-';
-		nr *= (-1);
-	}
-	if (nr == 0)
-		result[0] = '0';
-	while (len > 0)
+	while (len >= 0)
 	{
 		result[len--] = nr % 10 + '0';
 		nr /= 10;
 	}
+	if (n < 0)
+		result[0] = '-';
 	return (result);
 }
 

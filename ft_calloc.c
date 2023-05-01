@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:39:54 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/24 18:40:00 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:39:25 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t num, size_t size)

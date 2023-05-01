@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 08:05:56 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/05/01 15:42:02 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:01:22 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)

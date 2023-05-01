@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 13:36:46 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 15:54:33 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:01:47 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 07:31:20 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/26 09:34:32 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:01:37 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

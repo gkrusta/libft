@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 13:16:55 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 13:28:19 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:04:20 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

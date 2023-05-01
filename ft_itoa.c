@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:58:11 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/29 18:43:00 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:39:16 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_numblen(long n)

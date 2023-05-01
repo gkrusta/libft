@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:41:18 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 13:55:17 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:03:50 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *str, int c)

@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:42:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 16:54:36 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 18:00:24 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

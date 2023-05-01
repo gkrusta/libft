@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 19:01:07 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/29 19:57:11 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:38:47 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)

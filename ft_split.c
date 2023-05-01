@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:34:17 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 19:04:51 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:49:58 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static size_t	ft_counter(char const *s, char c)

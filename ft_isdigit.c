@@ -6,11 +6,9 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:51:45 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/24 18:54:07 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:42:45 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

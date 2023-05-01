@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:38:59 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/05/01 15:52:05 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:50:12 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *str)

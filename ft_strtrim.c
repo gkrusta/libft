@@ -6,11 +6,10 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:16:14 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/05/01 14:27:28 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:51:23 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	start_cmp(char const *s1, char const *set)

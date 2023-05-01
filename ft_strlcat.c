@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:45:39 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 11:38:05 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 14:29:45 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	if (i < size)
 		dst[i + j] = '\0';
-	return (i + ft_strlen((char *)src));
+	return (i + ft_strlen(src));
 }
 
 /* #include <stdio.h>

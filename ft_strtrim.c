@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 17:16:14 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 18:01:33 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 14:27:28 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 static int	start_cmp(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -40,8 +40,8 @@ static int	start_cmp(char const *s1, char const *set)
 
 static int	end_cmp(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

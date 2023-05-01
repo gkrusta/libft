@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 15:48:54 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/04/28 11:46:43 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 14:28:12 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
-	char	*result;
+	size_t		i;
+	char		*result;
 
 	i = 0;
 	result = (char *)s;

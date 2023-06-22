@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:21:13 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/06/22 16:48:00 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/05/01 17:36:36 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,13 +65,12 @@ void	ft_putnbr_fd(int n, int fd);
 /* bonus functions */
 typedef struct s_list
 {
-	int	*content;
-	int	value; // adding these elements for push_swap
-	int	index;
+	void			*content;
 	struct s_list	*next;
 }					t_list;
 
-t_list	*ft_lstnew(int value);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
@@ -79,9 +78,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
-
-/* functions added for push_swap */
-long	ft_long_atoi(const char	*str);
-int		ft_strcmp(const char *s1, const char *s2);
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 19:01:07 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/06/22 13:24:55 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/06/22 16:30:14 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ t_list	*ft_lstnew(int value)
 {
 	t_list	*new_node;
 
-	new_node = (t_list *)malloc(sizeof(t_list));
+	new_node = (t_list *)malloc(sizeof(int));
 	if (!new_node)
 		return (NULL);
-	new_node->content = content;
+	new_node->value = value;
 	new_node->next = NULL;
 	return (new_node);
 }

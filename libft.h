@@ -6,7 +6,7 @@
 /*   By: gkrusta <gkrusta@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:21:13 by gkrusta           #+#    #+#             */
-/*   Updated: 2023/06/19 15:58:54 by gkrusta          ###   ########.fr       */
+/*   Updated: 2023/06/22 13:26:22 by gkrusta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,11 +65,12 @@ void	ft_putnbr_fd(int n, int fd);
 /* bonus functions */
 typedef struct s_list
 {
-	void			*content;
+	int	value; // adding these elements for push_swap
+	int	index;
 	struct s_list	*next;
 }					t_list;
 
-t_list	*ft_lstnew(void *content);
+t_list	*ft_lstnew(int value);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
